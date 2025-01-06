@@ -2,7 +2,7 @@ import React from 'react'
 
 const navbar = () => {
   return (
-    <div>wowee it works, that's just crazy aint it</div>
+    <div className=' font-nunito p-5'>UX/UI Design</div>
   )
 }
 

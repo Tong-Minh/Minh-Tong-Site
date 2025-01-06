@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'yeseva': ['"Yeseva One"', 'serif'], // Custom Yeseva One font
+        'nunito': ['Nunito', 'sans-serif'],  // Custom Nunito font
+      },
+    },
   },
   plugins: [],
 }
