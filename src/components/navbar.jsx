@@ -2,7 +2,7 @@ import React from 'react'
 
 const navbar = () => {
   return (
-    <div className=' font-nunito p-5'>UX/UI Design</div>
+    <div className=' w-screen font-nunito px-10 text-right'>UX/UI Design</div>
   )
 }
 

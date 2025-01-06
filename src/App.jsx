@@ -5,25 +5,36 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from "./components/navbar"
 import Introduction from "./components/introduction"
+import Projects from "./components/projects"
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <div className=" flex flex-col items-end">
-        <Navbar />
-      
-      <Introduction 
-        pageName="Minh Tong"
-        description="Junior Web Designer & Software Developer, focusing on learning to create interesting, appealing, and accessible work."
-      />
-      <a className=" flex flex-col items-center absolute top-[650px] inset-0">
-          <div className=' font-nunito text-sm pb-3'>Portfolio</div>
-          <img src={arrowDown} className="" alt="Down Arrow" />
-      </a>
-      </div>
+      <div className=' flex flex-col items-center'>
+        <div className=" flex flex-col items-end">
+          <Navbar />
+        </div>
+        
+        <div className=' h-[775px]'>
+          <Introduction 
+            pageName="Minh Tong"
+            pageSecondName="ống"
+            description="Junior Web Designer & Software Developer, focusing on learning to create interesting, appealing, and accessible work."
+          />
 
+          <a className=" flex flex-col items-center absolute top-[650px] inset-0">
+              <div className=' font-nunito text-sm pb-3'>Portfolio</div>
+              <img src={arrowDown} className="" alt="Down Arrow" />
+          </a>
+        </div>
+
+        {/* <div> Tống Hoàng Minh */}
+          <Projects />
+        {/* </div> */}
+
+      </div>
     </>
   )
 
