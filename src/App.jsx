@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import arrowDown from './assets/arrow-down.svg'
 import viteLogo from '/vite.svg'
+import { Link, Element } from 'react-scroll';
 import './App.css'
 import Navbar from "./components/navbar"
 import Introduction from "./components/introduction"
@@ -24,10 +25,10 @@ function App() {
             description="Junior Web Designer & Software Developer, focusing on learning to create interesting, appealing, and accessible work."
           />
 
-          <a className=" flex flex-col items-center absolute top-[650px] inset-0">
-              <div className=' font-nunito text-sm pb-3'>Portfolio</div>
-              <img src={arrowDown} className="" alt="Down Arrow" />
-          </a>
+          <Link to="project-section" smooth={true} duration={500} className=" flex flex-col items-center absolute top-[650px] inset-0">
+              <div className=' font-nunito text-sm pb-3 px-1 cursor-pointer'>Portfolio</div>
+              <img src={arrowDown} className=" cursor-pointer px-5" alt="Down Arrow" />
+          </Link>
         </div>
 
         {/* <div> Tống Hoàng Minh */}
