@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
+import arrowDown from './assets/arrow-down.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from "./components/navbar"
@@ -12,8 +13,17 @@ function App() {
     <>
       <div className=" flex flex-col items-end">
         <Navbar />
+      
+      <Introduction 
+        pageName="Minh Tong"
+        description="Junior Web Designer & Software Developer, focusing on learning to create interesting, appealing, and accessible work."
+      />
+      <a className=" flex flex-col items-center absolute top-[650px] inset-0">
+          <div className=' font-nunito text-sm pb-3'>Portfolio</div>
+          <img src={arrowDown} className="" alt="Down Arrow" />
+      </a>
       </div>
-      <Introduction />
+
     </>
   )
 
