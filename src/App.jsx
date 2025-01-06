@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from "./components/navbar"
 import Introduction from "./components/introduction"
-import Projects from "./components/projects"
+import Projects from "./components/ProjectGrid/projects"
 
 function App() {
   // const [count, setCount] = useState(0)
