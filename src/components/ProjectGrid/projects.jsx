@@ -6,7 +6,10 @@ const projects = () => {
     return (
         <>
             <Element name="project-section" className=' font-yeseva text-5xl text-left z-50 lg:w-[912px] w-11/12  mb-10'>Projects</Element>
-            <div className=' font-nunito grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 z-50 lg:w-[912px] w-11/12 text-left'>
+            <div className=' font-nunito grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-8 z-50 lg:w-[912px] w-11/12 text-left mb-64'>
+                <ProjectGridItem 
+                    name="Personal Site"
+                />
                 <ProjectGridItem 
                     name="Globetrotters"
                 />
@@ -15,6 +18,9 @@ const projects = () => {
                 />
                 <ProjectGridItem 
                     name="The Good Blogger"
+                />
+                <ProjectGridItem 
+                    name="St. Olaf Messenger"
                 />
                 <ProjectGridItem 
                     name="T-Cutz Hair Salon"

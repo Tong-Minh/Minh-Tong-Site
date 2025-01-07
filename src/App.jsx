@@ -2,11 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import arrowDown from './assets/arrow-down.svg'
 import viteLogo from '/vite.svg'
-import { Link, Element } from 'react-scroll';
+import { Link, Element } from 'react-scroll'
 import './App.css'
 import Navbar from "./components/navbar"
 import Introduction from "./components/introduction"
 import Projects from "./components/ProjectGrid/projects"
+import Footer from "./components/footer.jsx"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -31,9 +32,9 @@ function App() {
           </Link>
         </div>
 
-        {/* <div> Tống Hoàng Minh */}
-          <Projects />
-        {/* </div> */}
+        <Projects />
+        
+        <Footer />
 
       </div>
     </>
