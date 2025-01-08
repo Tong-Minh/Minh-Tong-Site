@@ -4,8 +4,9 @@ import Typewriter from "typewriter-effect";
 const introduction = (props) => {
 
     const name = props.pageName;
-    const secondName = props.pageSecondName
+    const secondName = props.pageSecondName;
     const typewriterRef = useRef(null);
+    const num = props.delete;
 
     function hideCursor() {
         if (typewriterRef.current) {
@@ -27,7 +28,7 @@ const introduction = (props) => {
                             typewriter
                                 .typeString(name)
                                 .pauseFor(2000)
-                                .deleteChars(3)
+                                .deleteChars(num)
                                 .typeString(secondName)
                                 .callFunction(() => hideCursor())
                                 .start();

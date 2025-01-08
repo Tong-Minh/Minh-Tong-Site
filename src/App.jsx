@@ -1,42 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import arrowDown from './assets/arrow-down.svg'
-import viteLogo from '/vite.svg'
-import { Link, Element } from 'react-scroll'
 import './App.css'
-import Navbar from "./components/navbar"
-import Introduction from "./components/introduction"
-import Projects from "./components/ProjectGrid/projects"
-import Footer from "./components/footer.jsx"
+import Homepage from './components/homepage'
+import { Route, Routes, Link, useLocation} from 'react-router-dom'
+import Photography from "./components/photography"
+import { useState } from 'react'
+
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const location = useLocation();
+  const [isHome, setIsHome] = useState(location.pathname === '/');
 
   return (
     <>
-      <div className=' flex flex-col items-center'>
-        <div className=" flex flex-col items-end">
-          <Navbar />
-        </div>
-        
-        <div className=' h-[775px]'>
-          <Introduction 
-            pageName="Minh Tong"
-            pageSecondName="ống"
-            description="Junior Web Designer & Software Developer, focusing on learning to create interesting, appealing, and accessible work."
-          />
-
-          <Link to="project-section" smooth={true} duration={500} className=" flex flex-col items-center absolute top-[650px] inset-0">
-              <div className=' font-nunito text-sm pb-3 px-1 cursor-pointer'>Portfolio</div>
-              <img src={arrowDown} className=" cursor-pointer px-5" alt="Down Arrow" />
-          </Link>
-        </div>
-
-        <Projects />
-        
-        <Footer />
-
+      <div className=" flex flex-col items-end z-50 pr-5">
+        <Link to={isHome ? '/photography' : '/'}  onClick={() => setIsHome(!isHome)} className={` font-nunito ${isHome ? 'text-black' : 'text-white'} pt-12 text-right hover:underline `}>{isHome ? 'Photography' : 'Home'}</Link>
       </div>
+
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/photography' element={<Photography/>} />
+      </Routes>
     </>
   )
 

@@ -3,7 +3,7 @@ import React from 'react'
 const footer = () => {
     return (
     <>
-        <div className=' font-nunito bg-black w-screen grid lg:grid-cols-9 grid-cols-1 text-left pt-12 px-10'>
+        <div className=' font-nunito bg-[#101010] w-screen grid lg:grid-cols-9 grid-cols-1 text-left pt-12 px-10'>
             <div className=' mb-10 text-white lg:col-start-2 lg:col-span-1 grid-cols-1 flex flex-col'>
                 <a className=' mb-8'>Follow Me:</a>
                 <a href="https://www.Linkedin.com/in/MinhHTong" target="_blank" className=' mb-1 hover:text-amber-400'>→ LinkedIn</a>
