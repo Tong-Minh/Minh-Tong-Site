@@ -25,7 +25,7 @@ const photography = () => {
                 />
 
                 <ScrollLink to="project-section" smooth={true} duration={500} className=" flex flex-col items-center absolute top-[650px] inset-0">
-                    <div className=' font-nunito text-white text-sm pb-3 px-1 cursor-pointer'>Portfolio</div>
+                    <div className=' font-nunito text-white text-sm pb-3 px-1 cursor-pointer'>Photos</div>
                     <img src={arrowDown} className=" cursor-pointer px-5" alt="Down Arrow" />
                 </ScrollLink>
             </div>
