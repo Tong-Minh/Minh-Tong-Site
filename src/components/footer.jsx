@@ -26,7 +26,7 @@ const footer = () => {
                 </div>
             </div>
             <div className=' mb-32 text-amber-400 lg:col-start-6 lg:col-span-3 grid-cols-1'>
-                <div className=' mb-8'>Full disclosure, the credit for creating the design of this website goes to <a href="https://www.jay-clark.co.uk/" target="_blank" className=' mb-1 hover:text-white underline'>Jay Clark</a>. I based my personal site's design off of his using Vite & Tailwind because I'm learning the stack, I love photography too, and I thought it was beautiful. I'm getting better at bringing ideas to life.</div>
+                <div className=' mb-8'>I'm getting better at bringing my ideas to life.</div>
             </div>
         </div>
     </>

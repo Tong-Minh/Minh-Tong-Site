@@ -7,7 +7,7 @@ import goodblogger from './projectAssets/goodblogger.svg'
 import olaf from './projectAssets/olafmessenger.svg'
 import personal from './projectAssets/personal.svg'
 import tcutz from './projectAssets/tcutz.svg'
-import resume from './projectAssets/Minh Tong - 2025.pdf'
+import resume from './projectAssets/Minh_Tong_Resume.pdf'
 
 const projects = () => {
     return (
